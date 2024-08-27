@@ -1,0 +1,31 @@
+use foodDelivery;
+
+
+-- user table
+
+create table Users(
+userId int not null,
+userName varchar(10) not null,
+userMail varchar(30) not null,
+userPhnum varchar(15) not null,
+primary key(userId)
+);
+
+insert into Users(userId,userName,userMail,userPhnum)values
+(001,'Abishek','abi01@gmail.com','8344789091'),
+(002,'Arun','arun02@gmail.com','8355768910'),
+(003,'Anu','anu03@gmail.com','9934678912'),
+(004,'Aadhvik','aadhvik04@gmail.com','2236789045'),
+(005,'Abinav','abinav05@gmail.com','6312890654'),
+(006,'Akilan','akilan06@gmail.com','5578953421');
+
+select * from Users;
+
+
+create table  restaurant(
+ restaurant_id int NOT NULL,
+    name varchar(50) NOT NULL,            
+    address varchar(100) NOT NULL,        
+    phone_number varchar(15) NOT NULL,    
+    primary key (restaurant_id)  
+)
